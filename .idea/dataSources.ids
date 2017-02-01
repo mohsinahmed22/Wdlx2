@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<component name="dataSourceStorage">
+  <data-source name="MySQL - wordlixcms@localhost" uuid="b6cb399e-2345-4d39-9195-43d6fe43dba3">
+    <database-info product="MySQL" version="5.5.5-10.1.19-MariaDB" jdbc-version="4.0" driver-name="MySQL Connector Java" driver-version="mysql-connector-java-5.1.35 ( Revision: 5fb9c5849535c13917c2cf9baaece6ef9693ef27 )">
+      <extra-name-characters>#@</extra-name-characters>
+      <identifier-quote-string>`</identifier-quote-string>
+    </database-info>
+    <case-sensitivity plain-identifiers="lower" quoted-identifiers="lower"/>
+    <database-model serializer="dbm" rdbms="MYSQL" format-version="2.6">
+      <schema id="1" name="wordlixcms">
+        <visible>1</visible>
+      </schema>
+      <schema id="2" name="aaa"/>
+      <schema id="3" name="cms"/>
+      <schema id="4" name="cms_live"/>
+      <schema id="5" name="information_schema"/>
+      <schema id="6" name="mag"/>
+      <schema id="7" name="magento2"/>
+      <schema id="8" name="mysql"/>
+      <schema id="9" name="performance_schema"/>
+      <schema id="10" name="phpmyadmin"/>
+      <schema id="11" name="test"/>
+      <schema id="12" name="toolor5_cmsdb"/>
+    </database-model>
+  </data-source>
+</component>

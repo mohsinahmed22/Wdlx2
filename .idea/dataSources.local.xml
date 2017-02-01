@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="dataSourceStorageLocal">
+    <data-source name="MySQL - wordlixcms@localhost" uuid="b6cb399e-2345-4d39-9195-43d6fe43dba3">
+      <secret-storage>master_key</secret-storage>
+      <user-name>root</user-name>
+      <introspection-scope>wordlixcms:</introspection-scope>
+      <resolve-scope>wordlixcms:</resolve-scope>
+    </data-source>
+  </component>
+</project>
