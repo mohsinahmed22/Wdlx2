@@ -21,6 +21,40 @@
       <schema id="10" name="phpmyadmin"/>
       <schema id="11" name="test"/>
       <schema id="12" name="toolor5_cmsdb"/>
+      <table id="13" parent="1" name="cms_users"/>
+      <column id="14" parent="13" name="users_id">
+        <mandatory>1</mandatory>
+        <data-type>int(11)|0</data-type>
+        <sequence-identity>1</sequence-identity>
+      </column>
+      <column id="15" parent="13" name="username">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="16" parent="13" name="users_password">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="17" parent="13" name="users_firstname">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="18" parent="13" name="users_lastname">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="19" parent="13" name="users_status">
+        <data-type>tinyint(1)|0</data-type>
+      </column>
+      <column id="20" parent="13" name="users_role">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="21" parent="13" name="users_hash">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <column id="22" parent="13" name="users_image">
+        <data-type>varchar(255)|0</data-type>
+      </column>
+      <key id="23" parent="13" name="PRIMARY">
+        <columns>users_id</columns>
+        <primary>1</primary>
+      </key>
     </database-model>
   </data-source>
 </component>
