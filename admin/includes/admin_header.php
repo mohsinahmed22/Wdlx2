@@ -1,16 +1,18 @@
 <?php
+ob_start();
+session_start();
+include 'lib/functions.php';
+
+if(!_isAdmin($_SESSION['users_role'])){
+    redirect("login/login.php?error=" . urlencode('You are not authorized.'));
+}
 /**
  * User: Mohsin
  * Date: 2/1/2017
  * Time: 10:48 AM
  */
-header("Location: login/login.php");
+
 ?>
-
-
-<?php include 'config/config.php';?>
-<?php include 'lib/Database.php'; ?>
-<?php $db = new Database(); ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>

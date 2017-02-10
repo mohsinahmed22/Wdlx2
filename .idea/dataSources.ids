@@ -39,8 +39,8 @@
       <column id="18" parent="13" name="users_lastname">
         <data-type>varchar(255)|0</data-type>
       </column>
-      <column id="19" parent="13" name="users_status">
-        <data-type>tinyint(1)|0</data-type>
+      <column id="19" parent="13" name="users_email">
+        <data-type>varchar(255)|0</data-type>
       </column>
       <column id="20" parent="13" name="users_role">
         <data-type>varchar(255)|0</data-type>
@@ -51,7 +51,10 @@
       <column id="22" parent="13" name="users_image">
         <data-type>varchar(255)|0</data-type>
       </column>
-      <key id="23" parent="13" name="PRIMARY">
+      <column id="23" parent="13" name="users_status">
+        <data-type>tinyint(1)|0</data-type>
+      </column>
+      <key id="24" parent="13" name="PRIMARY">
         <columns>users_id</columns>
         <primary>1</primary>
       </key>

@@ -667,7 +667,7 @@
            <div class="daily-weather">
             <h2 class="day">Thu</h2>
             <h3 class="degrees">28</h3>
-            <canvas height="32" width="32" id="sleet"></canv
+            <canvas height="32" width="32" id="sleet"></canvas>
             <h5>15 <i>km/h</i></h5>
            </div>
           </div>

@@ -24,9 +24,17 @@
 
   <body class="login">
     <div>
+
       <a class="hiddenanchor" id="signup"></a>
       <a class="hiddenanchor" id="signin"></a>
-
+    <?php
+        if(isset($_GET['error'])){
+            echo "<div class='alert alert-danger'>{$_GET['error']} </div>";
+        }
+        if(isset($_GET['success'])){
+            echo "<div class='alert alert-success'>{$_GET['success']} </div>";
+        }
+    ?>
       <div class="login_wrapper">
         <div class="animate form login_form">
           <section class="login_content">
@@ -64,19 +72,19 @@
 
         <div id="register" class="animate form registration_form">
           <section class="login_content">
-            <form>
+            <form  action="process_login.php" method="post">
               <h1>Create Account</h1>
               <div>
-                <input type="text" class="form-control" placeholder="Username" required="" />
+                <input type="text" class="form-control" name="username" placeholder="Username" required="" />
               </div>
               <div>
-                <input type="email" class="form-control" placeholder="Email" required="" />
+                <input type="email" class="form-control" name="users_email" placeholder="Email" required="" />
               </div>
               <div>
-                <input type="password" class="form-control" placeholder="Password" required="" />
+                <input type="password" class="form-control" name="users_password" placeholder="Password" required="" />
               </div>
               <div>
-                <a class="btn btn-default submit" href="index.html">Submit</a>
+                <button class="btn btn-default " type="submit" name="register">Register</button>
               </div>
 
               <div class="clearfix"></div>
