@@ -1,15 +1,18 @@
 <?php
+ob_start();
+session_start();
+include 'lib/functions.php';
+
+if(!_isAdmin($_SESSION['users_role'])){
+    redirect("login/login.php?error=" . urlencode('You are not authorized.'));
+}
 /**
- * Created by PhpStorm.
  * User: Mohsin
  * Date: 2/1/2017
  * Time: 10:48 AM
- */?>
+ */
 
-
-<?php include 'config/config.php';?>
-<?php include 'lib/Database.php'; ?>
-<?php $db = new Database(); ?>
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -19,7 +22,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    <title>Gentelella Alela! | </title>
+    <title>Content Management System | </title>
 
     <!-- Bootstrap -->
     <link href="vendors/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
